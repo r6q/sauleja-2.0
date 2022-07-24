@@ -1,6 +1,7 @@
 <script lang="ts">
   import type {BookData} from './data'
   import { goto } from '$app/navigation'
+  import { base } from '$app/paths';
 
   export let key: string = undefined
   export let book: BookData | undefined = undefined
@@ -14,7 +15,7 @@
 <div class="s-base-card">
   <div class="s-card-layout">
     <div>
-      <img src="/images/{key}.jpg" alt={book?.title} class="s-card-image">
+      <img src="{base}/images/{key}.jpg" alt={book?.title} class="s-card-image">
     </div>
     <div class="s-card-right">
       <div class="has-text-centered s-card-title">{book?.title}</div>

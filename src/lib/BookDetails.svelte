@@ -1,5 +1,6 @@
 <script lang="ts">
   import type {BookData} from './data'
+  import { base } from '$app/paths';
 
   export let key = ''
   export let book: BookData | undefined = undefined
@@ -8,7 +9,7 @@
 
 <div class="s-book-details-container">
   <div>
-    <img src="/images/{key}.jpg" alt={book?.title} class="s-card-image">
+    <img src="{base}/images/{key}.jpg" alt={book?.title} class="s-card-image">
   </div>
   <div>
     {book?.title}
