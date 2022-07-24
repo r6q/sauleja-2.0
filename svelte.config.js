@@ -18,7 +18,7 @@ const config = {
     ),
 
     paths: {
-      base: environment === 'prod' ? '/sveltekit-demo1' : '/abc',
+      base: environment === 'prod' ? '/sauleja-2.0' : '',
     },
 
     prerender: {
