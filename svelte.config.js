@@ -24,6 +24,7 @@ const config = {
     prerender: {
       default: true,
       entries: [
+          '*',
           '/books/bibele',
       ]
     },
