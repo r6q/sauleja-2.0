@@ -7,11 +7,11 @@
   export let book: BookData | undefined = undefined
 
   const handleClick = () => {
-    goto(`/books/${key}`)
+    goto(`${base}/books/${key}`)
   }
 
   const handleClick2 = () => {
-    goto(`/test`)
+    goto(`${base}/test`)
   }
 
 </script>
