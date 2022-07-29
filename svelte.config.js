@@ -7,15 +7,21 @@ const environment = 'development'
 const config = {
   // Consult https://github.com/sveltejs/svelte-preprocess
   // for more information about preprocessors
-  preprocess: preprocess(),
+  preprocess: [
+    preprocess(
+        {
+          scss: {
+            prependData: '@use "src/variables.scss" as *;',
+          },
+        }),
+  ],
 
   kit: {
     adapter: adapter(
         {
           pages: 'build',
           assets: 'build',
-        },
-    ),
+        }),
 
     // paths: {
     //   base: environment === 'prod' ? '/sauleja-2.0' : '',
@@ -24,14 +30,14 @@ const config = {
     prerender: {
       default: true,
       entries: [
-          '*',
-          '/books/bibele',
-          '/books/jauna_deriba',
-          '/books/laipnibas_skola',
-          '/books/tikai_sievietem',
-          '/books/tikai_viriesiem',
-          '/books/depresija',
-      ]
+        '*',
+        '/books/bibele',
+        '/books/jauna_deriba',
+        '/books/laipnibas_skola',
+        '/books/tikai_sievietem',
+        '/books/tikai_viriesiem',
+        '/books/depresija',
+      ],
     },
   },
 }
