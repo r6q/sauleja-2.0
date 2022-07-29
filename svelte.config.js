@@ -1,7 +1,7 @@
 import adapter from '@sveltejs/adapter-static'
 import preprocess from 'svelte-preprocess'
 
-const environment = 'prod'
+const environment = 'development'
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -17,9 +17,9 @@ const config = {
         },
     ),
 
-    paths: {
-      base: environment === 'prod' ? '/sauleja-2.0' : '',
-    },
+    // paths: {
+    //   base: environment === 'prod' ? '/sauleja-2.0' : '',
+    // },
 
     prerender: {
       default: true,
