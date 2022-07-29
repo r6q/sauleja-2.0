@@ -26,6 +26,11 @@ const config = {
       entries: [
           '*',
           '/books/bibele',
+          '/books/jauna_deriba',
+          '/books/laipnibas_skola',
+          '/books/tikai_sievietem',
+          '/books/tikai_viriesiem',
+          '/books/depresija',
       ]
     },
   },
