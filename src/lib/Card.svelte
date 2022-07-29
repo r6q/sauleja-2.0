@@ -1,10 +1,18 @@
 <script lang="ts">
   import type {BookData} from './data'
-  import { goto } from '$app/navigation'
-  import { base } from '$app/paths';
+  import {goto} from '$app/navigation'
+  import {base} from '$app/paths'
+  import {onMount} from 'svelte'
 
   export let key: string = undefined
   export let book: BookData | undefined = undefined
+
+  let Carousel
+  let carousel
+  onMount(async () => {
+    const module = await import('svelte-carousel')
+    Carousel = module.default
+  })
 
   const handleClick = () => {
     goto(`${base}/books/${key}`)
@@ -15,7 +23,10 @@
 <div class="s-base-card">
   <div class="s-card-layout">
     <div>
-      <img src="{base}/images/{key}.jpg" alt={book?.title} class="s-card-image">
+      <svelte:component this={Carousel} bind:this={carousel} arrows={false}>
+        <img src="{base}/images/{key}.jpg" alt={book?.title} class="s-card-image">
+        <img src="{base}/images/{key}.jpg" alt={book?.title} class="s-card-image">
+      </svelte:component>
     </div>
     <div class="s-card-right">
       <div class="has-text-centered s-card-title">{book?.title}</div>
@@ -40,7 +51,7 @@
   }
 
   .s-card-image {
-    height: 250px;
+    height: 270px;
   }
 
   .s-card-title {
