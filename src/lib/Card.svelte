@@ -10,10 +10,6 @@
     goto(`${base}/books/${key}`)
   }
 
-  const handleClick2 = () => {
-    goto(`${base}/test`)
-  }
-
 </script>
 
 <div class="s-base-card">
@@ -24,7 +20,6 @@
     <div class="s-card-right">
       <div class="has-text-centered s-card-title">{book?.title}</div>
       <button class="button is-info s-card-button" on:click={handleClick}>Apskatīt</button>
-      <button class="button is-info s-card-button" on:click={handleClick2}>Apskatīt2</button>
     </div>
   </div>
 </div>
