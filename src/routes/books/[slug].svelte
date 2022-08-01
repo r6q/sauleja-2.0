@@ -9,9 +9,6 @@
 </script>
 
 <div>
-
-  This is title: {book.title} ---
-
   <BookDetails key={slug} book={book}/>
 
 </div>
