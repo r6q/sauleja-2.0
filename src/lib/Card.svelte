@@ -22,10 +22,16 @@
 
 <div class="s-base-card">
   <div class="s-card-layout">
-    <div>
-      <svelte:component this={Carousel} bind:this={carousel} arrows={false}>
+    <div class="s-card-left">
+      <svelte:component this={Carousel} bind:this={carousel} let:showPrevPage let:showNextPage>
+        <div slot="prev" on:click={showPrevPage} class="custom-arrow custom-arrow-prev">
+          <i></i>
+        </div>
         <img src="{base}/images/{key}.jpg" alt={book?.title} class="s-card-image">
         <img src="{base}/images/{key}.jpg" alt={book?.title} class="s-card-image">
+        <div slot="next" on:click={showNextPage} class="custom-arrow custom-arrow-next">
+          <i></i>
+        </div>
       </svelte:component>
     </div>
     <div class="s-card-right">
@@ -68,6 +74,47 @@
     grid-template-rows: 1fr 1fr;
     justify-items: center;
     align-items: center;
+  }
+
+  .custom-arrow {
+    width: 20px;
+    background-color: #000000;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    transition: opacity 150ms ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+
+    & > i {
+      border: solid white;
+      border-width: 0 5px 5px 0;
+      padding: 5px;
+      position: relative;
+    }
+  }
+
+  .s-card-left:hover .custom-arrow {
+    opacity: 0.5;
+  }
+
+  .custom-arrow-prev > i {
+    transform: rotate(135deg);
+    right: -4px;
+  }
+
+  .custom-arrow-next {
+    right: 0;
+  }
+
+  .custom-arrow-next > i {
+    transform: rotate(-45deg);
+    left: -4px;
   }
 
 </style>
