@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "_app/immutable/start-42af9b09.js",
+    "file": "_app/immutable/start-3423841f.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -24,7 +24,7 @@
       "_index-e4fea147.js"
     ],
     "css": [
-      "_app/immutable/assets/__layout-2091b991.css"
+      "_app/immutable/assets/__layout-981c45b3.css"
     ]
   },
   ".svelte-kit/runtime/components/error.svelte": {
@@ -37,7 +37,7 @@
     ]
   },
   "src/routes/books/[slug].svelte": {
-    "file": "_app/immutable/pages/books/_slug_.svelte-91e0dbf0.js",
+    "file": "_app/immutable/pages/books/_slug_.svelte-03247a93.js",
     "src": "src/routes/books/[slug].svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -47,11 +47,11 @@
       "_paths-b9644fda.js"
     ],
     "css": [
-      "_app/immutable/assets/[slug]-78f03938.css"
+      "_app/immutable/assets/[slug]-bc2f0df5.css"
     ]
   },
   "src/routes/index.svelte": {
-    "file": "_app/immutable/pages/index.svelte-23e672e9.js",
+    "file": "_app/immutable/pages/index.svelte-a4bba778.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -92,7 +92,7 @@
     ]
   },
   "src/routes/books/[slug].css": {
-    "file": "_app/immutable/assets/[slug]-78f03938.css",
+    "file": "_app/immutable/assets/[slug]-bc2f0df5.css",
     "src": "src/routes/books/[slug].css"
   },
   "src/routes/index.css": {
@@ -104,7 +104,7 @@
     "src": "node_modules/svelte-carousel/src/main.css"
   },
   "src/routes/__layout.css": {
-    "file": "_app/immutable/assets/__layout-2091b991.css",
+    "file": "_app/immutable/assets/__layout-981c45b3.css",
     "src": "src/routes/__layout.css"
   }
 }
