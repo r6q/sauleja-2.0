@@ -3,6 +3,7 @@ export interface BookData {
   description: string
   numOfImages: number
   storeUrl: string
+  hasDetails: boolean
 }
 
 export const BooksMetadata: Map<string, BookData> = new Map<string, BookData>([
@@ -25,6 +26,7 @@ export const BooksMetadata: Map<string, BookData> = new Map<string, BookData>([
         'dzīvē un pirmo kristiešu piedzīvojumos, kas aprakstīti Apustuļu darbos un vēstulēs.</p>',
       numOfImages: 3,
       storeUrl: 'https://www.amnis.lv/Bibeles%20lat.val./bibeles/bibele-viegli-lasama-valoda',
+      hasDetails: true,
     },
   ],
   [
@@ -38,16 +40,7 @@ export const BooksMetadata: Map<string, BookData> = new Map<string, BookData>([
         '<p>"Bībele viegli lasāmā valodā - Jaunā Derība, plūst kā upe no Jēzus evaņģēliju notikumiem Apustuļu darbos un iedvesmojošām vēstulēm, noslēdzoties ar Jēzus Bībeles pēdējā - Atklāsmes - grāmatā."</p>',
       numOfImages: 1,
       storeUrl: 'https://www.amnis.lv/Bibeles%20lat.val./bibeles/bibele-viegli-lasama-valoda---jauna-deriba',
-    },
-  ],
-  [
-    'depresija',
-    {
-      title: 'Depresija',
-      description:
-        '<p>DELETE ME</p>',
-      numOfImages: 1,
-      storeUrl: 'https://www.amnis.lv/viriesiem/gramatas/tikai-viriesiem',
+      hasDetails: true,
     },
   ],
   [
@@ -73,6 +66,7 @@ export const BooksMetadata: Map<string, BookData> = new Map<string, BookData>([
         '<p>Šauntijai ir Hārvarda universitātes grāds un viņa ir izstrādājusi inovatīvu pētījuma veikšanas metodi, kas palīdz labāk izprast cilvēku savstarpējās attiecības.</p>',
       numOfImages: 1,
       storeUrl: 'https://www.amnis.lv/Attiecibas/gramatas/laipnibas-skola',
+      hasDetails: true,
     },
   ],
   [
@@ -88,6 +82,7 @@ export const BooksMetadata: Map<string, BookData> = new Map<string, BookData>([
         'Neizmirstamā, sievišķīgā sarunā Šauntija Feldhana jums ļauj pārvarēt virspusējību un nolaisties vīriešu iekšējās dzīves dzelmēs. Šī grāmata ir par lietām, kas mums vīriešos "nepielec". "Tikai sievietēm" ir neskaitāmi atklājumi, ko autore ir ieguvusi gan vēl nebijušas visaptverošas aptaujas rezultātā, gan arī personiski intervējot aptuveni tūkstoš visdažādāko vīriešu. Šīs atklāsmes jums ir nepieciešamas ne vien lai labāk saprastu savu vīrieti, bet arī lai viņu atbalstītu un mīlētu tā, kā viņam tas ir vajadzīgs. Saņemot spēku bibliskā cerībā, jūs atklāsiet, kā mīlēt savu vīrieti tādu, kāds viņš patiešām ir, un nevis tādu, kādu viņu redzat jūs.</p>',
       numOfImages: 1,
       storeUrl: 'https://www.amnis.lv/sievietem/gramatas/tikai-sievietem',
+      hasDetails: true,
     },
   ],
   [
@@ -108,6 +103,18 @@ export const BooksMetadata: Map<string, BookData> = new Map<string, BookData>([
         '</ol></p>',
       numOfImages: 1,
       storeUrl: 'https://www.amnis.lv/viriesiem/gramatas/tikai-viriesiem',
+      hasDetails: true,
+    },
+  ],
+  [
+    'depresija',
+    {
+      title: 'Depresija',
+      description:
+        '<p>DELETE ME</p>',
+      numOfImages: 1,
+      storeUrl: 'https://www.amnis.lv/sevis%20pilnveidosana/gramatas/depresija',
+      hasDetails: false,
     },
   ],
 ])

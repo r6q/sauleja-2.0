@@ -14,7 +14,7 @@
     Carousel = module.default
   })
 
-  const handleClick = () => {
+  const handleViewClick = () => {
     goto(`${base}/books/${key}`)
   }
 
@@ -36,7 +36,11 @@
     </div>
     <div class="s-card-right">
       <div class="has-text-centered s-card-title">{book?.title}</div>
-      <button class="button is-info s-card-button" on:click={handleClick}>Apskatīt</button>
+      {#if book?.hasDetails}
+        <button class="button is-info s-card-button" on:click={handleViewClick}>Apskatīt</button>
+      {:else}
+        <a class="button is-info s-card-button" href={book?.storeUrl}>Pirkt</a>
+      {/if}
     </div>
   </div>
 </div>

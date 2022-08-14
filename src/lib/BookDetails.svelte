@@ -19,7 +19,6 @@
     <a id="buy-button" class="button is-info" href={book?.storeUrl} target="_blank">
       Apskatīt internetveikalā
     </a>
-    <!--{book?.storeUrl}-->
   </div>
 </div>
 
