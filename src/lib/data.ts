@@ -69,22 +69,23 @@ export const BooksMetadata: Map<string, BookData> = new Map<string, BookData>([
       hasDetails: true,
     },
   ],
-  [
-    'tikai_sievietem',
-    {
-      title: 'Tikai Sievietēm',
-      description:
-        '<b>TIKAI SIEVIETĒM</b><br>' +
-        '<div class="s-author-caption">Šauntija Feldhana</div>' +
-        '<p>Kas viņam tur iekšā notiek?<br>' +
-        'Vai jums kādreiz ir gadījies, ka jūsu vīrieša teiktais vai rīcība jūs ir ievedusi pilnīgā apjukumā?<br>' +
-        'Vai vēlaties uzzināt par viņa apslēptajām vēlmēm un bailēm, par viņa ikdienas cīņām, par kurām jūs pat nenojaušat?<br>' +
-        'Neizmirstamā, sievišķīgā sarunā Šauntija Feldhana jums ļauj pārvarēt virspusējību un nolaisties vīriešu iekšējās dzīves dzelmēs. Šī grāmata ir par lietām, kas mums vīriešos "nepielec". "Tikai sievietēm" ir neskaitāmi atklājumi, ko autore ir ieguvusi gan vēl nebijušas visaptverošas aptaujas rezultātā, gan arī personiski intervējot aptuveni tūkstoš visdažādāko vīriešu. Šīs atklāsmes jums ir nepieciešamas ne vien lai labāk saprastu savu vīrieti, bet arī lai viņu atbalstītu un mīlētu tā, kā viņam tas ir vajadzīgs. Saņemot spēku bibliskā cerībā, jūs atklāsiet, kā mīlēt savu vīrieti tādu, kāds viņš patiešām ir, un nevis tādu, kādu viņu redzat jūs.</p>',
-      numOfImages: 1,
-      storeUrl: 'https://www.amnis.lv/sievietem/gramatas/tikai-sievietem',
-      hasDetails: true,
-    },
-  ],
+  // seems to be removed from the store
+  /*  [
+      'tikai_sievietem',
+      {
+        title: 'Tikai Sievietēm',
+        description:
+          '<b>TIKAI SIEVIETĒM</b><br>' +
+          '<div class="s-author-caption">Šauntija Feldhana</div>' +
+          '<p>Kas viņam tur iekšā notiek?<br>' +
+          'Vai jums kādreiz ir gadījies, ka jūsu vīrieša teiktais vai rīcība jūs ir ievedusi pilnīgā apjukumā?<br>' +
+          'Vai vēlaties uzzināt par viņa apslēptajām vēlmēm un bailēm, par viņa ikdienas cīņām, par kurām jūs pat nenojaušat?<br>' +
+          'Neizmirstamā, sievišķīgā sarunā Šauntija Feldhana jums ļauj pārvarēt virspusējību un nolaisties vīriešu iekšējās dzīves dzelmēs. Šī grāmata ir par lietām, kas mums vīriešos "nepielec". "Tikai sievietēm" ir neskaitāmi atklājumi, ko autore ir ieguvusi gan vēl nebijušas visaptverošas aptaujas rezultātā, gan arī personiski intervējot aptuveni tūkstoš visdažādāko vīriešu. Šīs atklāsmes jums ir nepieciešamas ne vien lai labāk saprastu savu vīrieti, bet arī lai viņu atbalstītu un mīlētu tā, kā viņam tas ir vajadzīgs. Saņemot spēku bibliskā cerībā, jūs atklāsiet, kā mīlēt savu vīrieti tādu, kāds viņš patiešām ir, un nevis tādu, kādu viņu redzat jūs.</p>',
+        numOfImages: 1,
+        storeUrl: 'https://www.amnis.lv/sievietem/gramatas/tikai-sievietem',
+        hasDetails: true,
+      },
+    ],*/
   [
     'tikai_viriesiem',
     {
@@ -110,10 +111,69 @@ export const BooksMetadata: Map<string, BookData> = new Map<string, BookData>([
     'depresija',
     {
       title: 'Depresija',
-      description:
-        '<p>DELETE ME</p>',
-      numOfImages: 1,
+      description: '',
+      numOfImages: 0,
       storeUrl: 'https://www.amnis.lv/sevis%20pilnveidosana/gramatas/depresija',
+      hasDetails: false,
+    },
+  ],
+  [
+    'homoseksualitate',
+    {
+      title: 'Homoseksualitāte',
+      description: '',
+      numOfImages: 0,
+      storeUrl: 'https://www.amnis.lv/sevis%20pilnveidosana/gramatas/homoseksualitate',
+      hasDetails: false,
+    },
+  ],
+  [
+    'passakroplosanas',
+    {
+      title: 'Pašsakropļošanās',
+      description: '',
+      numOfImages: 0,
+      storeUrl: 'https://www.amnis.lv/sevis%20pilnveidosana/gramatas/passakroplosanas',
+      hasDetails: false,
+    },
+  ],
+  [
+    'piedosana',
+    {
+      title: 'Piedošana "Es nespēju sev piedot!"',
+      description: '',
+      numOfImages: 0,
+      storeUrl: 'https://www.amnis.lv/sevis%20pilnveidosana/gramatas/piedosana-es-nespeju-sev-piedot',
+      hasDetails: false,
+    },
+  ],
+  [
+    'pornografija',
+    {
+      title: 'Pornogrāfija - nokaut pūķi',
+      description: '',
+      numOfImages: 0,
+      storeUrl: 'https://www.amnis.lv/sevis%20pilnveidosana/gramatas/pornografija---nokaut-puki',
+      hasDetails: false,
+    },
+  ],
+  [
+    'raizeties',
+    {
+      title: 'Kāpēc raizēties?',
+      description: '',
+      numOfImages: 0,
+      storeUrl: 'https://www.amnis.lv/sevis%20pilnveidosana/gramatas/kapec-raizeties',
+      hasDetails: false,
+    },
+  ],
+  [
+    'dusmigs_uz_dievu',
+    {
+      title: 'Vai esi dusmīgs uz Dievu?',
+      description: '',
+      numOfImages: 0,
+      storeUrl: 'https://www.amnis.lv/sevis%20pilnveidosana/gramatas/vai-esi-dusmigs-uz-dievu',
       hasDetails: false,
     },
   ],
