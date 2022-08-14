@@ -28,7 +28,7 @@
           <i></i>
         </div>
         <img src="{base}/images/{key}/{key}_front.jpg" alt={book?.title} class="s-card-image">
-        <img src="{base}/images/{key}/{key}_back.jpg" alt={book?.title} class="s-card-image">
+        <img src="{base}/images/{key}/{key}_back.jpg" loading="lazy" alt={book?.title} class="s-card-image">
         <div slot="next" on:click={showNextPage} class="custom-arrow custom-arrow-next">
           <i></i>
         </div>
